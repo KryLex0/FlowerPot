@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.options.OptionsFragment">
+<!--
+    <TextView
+        android:id="@+id/text_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:textAlignment="center"
+                android:text="Mode d'arrosage: "
+                android:layout_gravity="left"
+                tools:ignore="RtlCompat" />
+            <Switch
+                android:id="@+id/switch_arrosage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manuel"
+                android:textAlignment="textEnd"
+                android:layout_weight="0.50"
+                tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="0.50"
+                android:textAlignment="center"
+                android:text="Notifications"
+                android:layout_gravity="left"
+                tools:ignore="RtlCompat" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.60"
+                android:textAlignment="center"
+                android:id="@+id/btn_notif"
+                android:text="Notification"
+                tools:ignore="MissingConstraints" />
+
+            <Spinner
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:prompt="@string/notifications"
+                android:entries="@array/temps_notif"
+                android:id="@+id/spinner_temps_notif"
+                android:layout_weight="0.50"
+                android:textAlignment="center"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

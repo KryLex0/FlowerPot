@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">FlowerPot</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_options">Options</string>
+
+
+    <string name="choix_graph">All</string>
+    <string-array name="type_graphe">
+        <item>Température</item>
+        <item>Luminosité</item>
+        <item>Humidité</item>
+    </string-array>
+
+    <string name="notifications">All</string>
+    <string-array name="temps_notif">
+        <item>Jamais</item>
+        <item>Toutes les 4h</item>
+        <item>Toutes les 8h</item>
+        <item>Toutes les 12h</item>
+        <item>Toutes les 24h</item>
+    </string-array>
+
+</resources>
